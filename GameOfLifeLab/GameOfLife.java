@@ -1,9 +1,13 @@
 import info.gridworld.actor.Actor;
 import info.gridworld.actor.ActorWorld;
-import info.gridworld.actor.Rock;
+import info.gridworld.actor.*;
 import info.gridworld.grid.Grid;
 import info.gridworld.grid.BoundedGrid;
 import info.gridworld.grid.Location;
+import java.awt.Color;
+import java.util.ArrayList;
+
+
 
 /**
  * Game of Life starter code. Demonstrates how to create and populate the game using the GridWorld framework.
@@ -20,6 +24,7 @@ public class GameOfLife
     // the game board will have 5 rows and 5 columns
     private final int ROWS = 8;
     private final int COLS = 8;
+    private ArrayList<java.lang.Object[]> actors = new ArrayList<java.lang.Object[]>();
     
     /**
      * Default constructor for objects of class GameOfLife
@@ -67,38 +72,46 @@ public class GameOfLife
         //  (alive cells contains actors; dead cells do not)
         Grid<Actor> grid = world.getGrid();
         
-        // create and add rocks (a type of Actor) to the three intial locations
-        Rock rock1 = new Rock();
+        // create and add bugs (a type of Actor) to the three intial locations
+        Bug bug1 = new Bug(Color.CYAN);
         Location loc1 = new Location(X1, Y1);
-        grid.put(loc1, rock1);
+        actors.add(new Object[]{bug1, loc1});
+        grid.put(loc1, bug1);
         
-        Rock rock2 = new Rock();
+        Bug bug2 = new Bug(Color.CYAN);
         Location loc2 = new Location(X2, Y2);
-        grid.put(loc2, rock2);
+        actors.add(new Object[]{bug2, loc2});
+        grid.put(loc2, bug2);
         
-        Rock rock3 = new Rock();
+        Bug bug3 = new Bug(Color.CYAN);
         Location loc3 = new Location(X3, Y3);
-        grid.put(loc3, rock3);
+        actors.add(new Object[]{bug3, loc3});
+        grid.put(loc3, bug3);
         
-        Rock rock4 = new Rock();
+        Bug bug4 = new Bug(Color.CYAN);
         Location loc4 = new Location(X4, Y4);
-        grid.put(loc4, rock4);
+        actors.add(new Object[]{bug4, loc4});
+        grid.put(loc4, bug4);
         
-        Rock rock5 = new Rock();
+        Bug bug5 = new Bug(Color.CYAN);
         Location loc5 = new Location(X5, Y5);
-        grid.put(loc5, rock5);
+        actors.add(new Object[]{bug5, loc5});
+        grid.put(loc5, bug5);
         
-        Rock rock6 = new Rock();
+        Bug bug6 = new Bug(Color.CYAN);
         Location loc6 = new Location(X6, Y6);
-        grid.put(loc6, rock6);
+        actors.add(new Object[]{bug6, loc6});
+        grid.put(loc6, bug6);
         
-        Rock rock7 = new Rock();
+        Bug bug7 = new Bug(Color.CYAN);
         Location loc7 = new Location(X7, Y7);
-        grid.put(loc7, rock7);
+        actors.add(new Object[]{bug7, loc7});
+        grid.put(loc7, bug7);
         
-        Rock rock8 = new Rock();
+        Bug bug8 = new Bug(Color.CYAN);
         Location loc8 = new Location(X8, Y8);
-        grid.put(loc8, rock8);
+        actors.add(new Object[]{bug8, loc8});
+        grid.put(loc8, bug8);
     }
 
     /**
@@ -118,7 +131,12 @@ public class GameOfLife
         // create the grid, of the specified size, that contains Actors
         Grid<Actor> grid = world.getGrid();
         
-        // insert magic here...
+        for(int i=0;i<actors.size();i++)
+        {
+            Location l = (Location)actors.get(i)[1];
+            System.out.println(l);
+            System.out.println(grid.getNeighbors(l));
+        }
         
     }
     
@@ -165,6 +183,7 @@ public class GameOfLife
     public static void main(String[] args)
     {
         GameOfLife game = new GameOfLife();
+        game.createNextGeneration();
     }
 
 }

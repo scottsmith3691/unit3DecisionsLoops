@@ -1,0 +1,86 @@
+Project documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.8.0_45\bin\javadoc.exe
+-sourcepath
+C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab
+-source
+1.8
+-classpath
+C:\Program Files\BlueJ\lib\bluejcore.jar;C:\Program Files\BlueJ\lib\junit-4.8.2.jar;C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GridWorld\gridworld.jar;C:\Program Files\BlueJ\lib\userlib\pi4j-core.jar;C:\Program Files\BlueJ\lib\userlib\pi4j-device.jar;C:\Program Files\BlueJ\lib\userlib\pi4j-gpio-extension.jar;C:\Program Files\BlueJ\lib\userlib\pi4j-service.jar;C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab
+-d
+C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+C:\Program Files\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+-doctitle
+GameOfLifeLab
+-windowtitle
+GameOfLifeLab
+-author
+-version
+-nodeprecated
+-package
+-link
+C:\Users\Default\Desktop\JavaDocs\api\
+C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab/GameOfLifeTest.java
+C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab/GameOfLife.java
+<---- end of javadoc command ---->
+Loading source file C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLifeTest.java...
+Loading source file C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java...
+Constructing Javadoc information...
+C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLifeTest.java:6: error: package info.gridworld.actor does not exist
+import info.gridworld.actor.Actor;
+                           ^
+C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:1: error: package info.gridworld.actor does not exist
+import info.gridworld.actor.Actor;
+                           ^
+C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:2: error: package info.gridworld.actor does not exist
+import info.gridworld.actor.ActorWorld;
+                           ^
+C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:3: error: package info.gridworld.actor does not exist
+import info.gridworld.actor.*;
+^
+C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:4: error: package info.gridworld.grid does not exist
+import info.gridworld.grid.Grid;
+                          ^
+C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:5: error: package info.gridworld.grid does not exist
+import info.gridworld.grid.BoundedGrid;
+                          ^
+C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:6: error: package info.gridworld.grid does not exist
+import info.gridworld.grid.Location;
+                          ^
+C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:18: error: cannot find symbol
+    private ActorWorld world;
+            ^
+  symbol:   class ActorWorld
+  location: class GameOfLife
+C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:133: error: cannot find symbol
+    public Actor getActor(int row, int col)
+           ^
+  symbol:   class Actor
+  location: class GameOfLife
+Standard Doclet version 1.8.0_45
+Building tree for all the packages and classes...
+Generating C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\doc\GameOfLife.html...
+C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:30: warning - @post is an unknown tag.
+C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\GameOfLife.java:133: warning - @pre is an unknown tag.
+Generating C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\doc\GameOfLifeTest.html...
+Generating C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\doc\package-frame.html...
+Generating C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\doc\package-summary.html...
+Generating C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\doc\package-tree.html...
+Generating C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\doc\constant-values.html...
+Building index for all the packages and classes...
+Generating C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\doc\overview-tree.html...
+Generating C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\doc\index-all.html...
+Building index for all classes...
+Generating C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\doc\allclasses-frame.html...
+Generating C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\doc\allclasses-noframe.html...
+Generating C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\doc\index.html...
+Generating C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\doc\help-doc.html...
+Generating C:\Users\spsmith\Desktop\GitHub\unit3DecisionsLoops\GameOfLifeLab\doc\stylesheet.css...
+11 warnings
