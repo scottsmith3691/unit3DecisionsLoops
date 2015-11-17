@@ -131,13 +131,34 @@ public class GameOfLife
         // create the grid, of the specified size, that contains Actors
         Grid<Actor> grid = world.getGrid();
         
-        for(int i=0;i<actors.size();i++)
+        for(int i=1;i<COLS;i++)
         {
+            for( int x=1;x<=ROWS;x++)
+            {
+                
+                
+                //if (grid
+                
+                
+                
+                
+                
+                
+            }
             Location l = (Location)actors.get(i)[1];
             System.out.println(l);
+            ArrayList<Location> neighbors = grid.getNeighbors(l);
             System.out.println(grid.getNeighbors(l));
+            int size=neighbors.size();
+            if (size<2)
+            {
+                grid.remove(l);
+            }
+            else if( size >=2 && size<4)
+            {
+                
+            }
         }
-        
     }
     
     /**
