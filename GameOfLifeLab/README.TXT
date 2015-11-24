@@ -48,13 +48,13 @@ Live Cells are Blue.
 what do dead cells look like?
 Dead Cells are Red.
 what pattern is displayed? are multiple patterns available? are patterns chosen in code, chosen randomly, chosen by user
-It displays a prewritten pattern and it is choosen by the user.
+It displays a prewritten pattern.
 how long does the game run? does it run forever? does it prompt the user to continue?
-It runs as long as the user wants it to run. It prompts them.
+It runs for as man generations, less than 9 that a user wants. They are prompted at the beginning.
 what is the time interval between generations?
-However long the user wants.
+1 second
 what about edge cases? does it wrap around?
-Its does wrap around.
+Its does not wrap around.
 Artifacts to Produce:
 
 * Requirements Document: Many functional and nonfunctional requirements needs
